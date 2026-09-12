@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shan Chakraborty | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Shan Chakraborty - Web Developer skilled in HTML, CSS, JavaScript, PHP, and Python.">
+  <meta name="keywords" content="Shan Chakraborty, Portfolio, Computer Science, Web Developer, PHP, Python, JavaScript, HTML, CSS">
+  <meta name="author" content="Shan Chakraborty">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Ambient Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="gradient-text">Shan</span> Chakraborty
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#matrix" class="nav-link">Capabilities</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for Full-time & Freelance Projects</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Shan Chakraborty</span><br>
+          Web Developer
+        </h1>
+        <p class="hero-subtitle">
+          Passionate web developer specializing in modern Web Development (**HTML, CSS, JavaScript, PHP**) and Data Automation (**Python**). Building fast, scalable, and responsive digital solutions.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Clean Code</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">Ready</span>
+            <span class="stat-label">For Deployment</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> Explore Projects</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <div class="avatar-card">
+        <div class="avatar-wrapper">
+          <img src="assets/my_photo.jpg" alt="Shan Chakraborty" class="avatar-img">
+          
+          <div class="floating-badge badge-top-left">
+            <span class="badge-icon"><i class="fa-solid fa-code" style="color: var(--accent-cyan);"></i></span>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Specialty</div>
+              <div>Web Developer</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <span class="badge-icon"><i class="fa-solid fa-laptop-code" style="color: var(--accent-green);"></i></span>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Focus</div>
+              <div>Clean Architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-tag">// Background & Qualifications</span>
+      <h2 class="section-title">About & <span class="gradient-text">Education</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="glass-card">
+        <div class="card-icon"><i class="fa-solid fa-user-gear"></i></div>
+        <h3>Passionate Web Development</h3>
+        <p class="about-text" style="margin-top: 12px;">
+          I am a <strong>Web Developer</strong> currently <strong>studying for a Diploma in Computer Science</strong>. I am deeply passionate about building modern, high-performance web applications using HTML, CSS, JavaScript, and PHP, as well as developing automated tools and scripts with Python.
+        </p>
+        <p class="about-text">
+          My goal is to craft seamless digital experiences, write clean, maintainable code, and continuously apply core computer science principles to solve real-world web engineering challenges.
+        </p>
+        <div style="display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+          <span class="tag"><i class="fa-solid fa-check"></i> Web Development</span>
+          <span class="tag"><i class="fa-solid fa-check"></i> Database Systems</span>
+          <span class="tag"><i class="fa-solid fa-check"></i> Python Scripting</span>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+        <h3>Education & Foundations</h3>
+        
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <h4 class="degree-title">Studying for Diploma in Computer Science</h4>
+            <div class="degree-sub">Computer Science & Engineering Department</div>
+            <p class="about-text" style="font-size: 0.95rem;">
+              Currently pursuing my Diploma in Computer Science, mastering core engineering fundamentals: Data Structures, Algorithms, Web Development (HTML, CSS, JS, PHP), Relational Database Management (MySQL), and Python Programming.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 class="degree-title">Practical Web Engineering</h4>
+            <div class="degree-sub">Self-Driven Projects & Applied Work</div>
+            <p class="about-text" style="font-size: 0.95rem;">
+              Applying academic computer science concepts to engineer web portals, dynamic CMS engines, and Python data scraping & automation tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-tag">// Technical Expertise</span>
+      <h2 class="section-title">Core <span class="gradient-text">Skills</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- HTML -->
+      <div class="glass-card skill-card">
+        <div class="skill-icon-badge"><i class="fa-brands fa-html5"></i></div>
+        <h3 class="skill-name">HTML5</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Semantic Markup & SEO</p>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 95%;"></div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="glass-card skill-card">
+        <div class="skill-icon-badge"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3 class="skill-name">CSS3</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Glassmorphism & Flex/Grid</p>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="glass-card skill-card">
+        <div class="skill-icon-badge"><i class="fa-brands fa-js"></i></div>
+        <h3 class="skill-name">JavaScript</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">ES6+, DOM & Async APIs</p>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 88%;"></div>
+        </div>
+      </div>
+
+      <!-- PHP -->
+      <div class="glass-card skill-card">
+        <div class="skill-icon-badge"><i class="fa-brands fa-php"></i></div>
+        <h3 class="skill-name">PHP</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Backend Logic & MySQL CRUD</p>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="glass-card skill-card">
+        <div class="skill-icon-badge"><i class="fa-brands fa-python"></i></div>
+        <h3 class="skill-name">Python</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Automation & Data Processing</p>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 82%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Architecture & Capabilities Matrix Section (Replacing Sandbox) -->
+    <div id="matrix" class="glass-card" style="padding: 36px; margin-top: 40px; border-color: rgba(0, 242, 254, 0.2);">
+      <div style="margin-bottom: 28px; text-align: center;">
+        <span class="section-tag">// Technical Capabilities Matrix</span>
+        <h3 style="font-size: 1.8rem; margin-top: 6px;">Engineering & <span class="gradient-text">Development Highlights</span></h3>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+          <div style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 12px;"><i class="fa-solid fa-layer-group"></i></div>
+          <h4 style="margin-bottom: 8px;">Frontend Engineering</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Crafting pixel-perfect, accessible HTML5 structures and responsive CSS3 glassmorphic UIs. Interactive client-side behavior with modern ES6+ JavaScript.
+          </p>
+        </div>
+
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+          <div style="font-size: 1.5rem; color: var(--accent-purple); margin-bottom: 12px;"><i class="fa-solid fa-server"></i></div>
+          <h4 style="margin-bottom: 8px;">Backend & Database</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Developing robust server-side applications in PHP. Writing secure PDO queries, relational MySQL databases, and RESTful API authentication endpoints.
+          </p>
+        </div>
+
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+          <div style="font-size: 1.5rem; color: var(--accent-green); margin-bottom: 12px;"><i class="fa-solid fa-terminal"></i></div>
+          <h4 style="margin-bottom: 8px;">Python & Automation</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Building automated scripting pipelines, data extraction tools, log parsing scripts, and background processing tasks in Python.
+          </p>
+        </div>
+
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+          <div style="font-size: 1.5rem; color: var(--accent-yellow); margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4 style="margin-bottom: 8px;">CS Principles & Quality</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Applying computer science fundamentals: data structures, modular software design, clean code standards, and security best practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-tag">// Portfolio Showcase</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+    </div>
+
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Applications</button>
+      <button class="filter-btn" data-filter="php">PHP & Database</button>
+      <button class="filter-btn" data-filter="python">Python Automation</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="glass-card project-card" data-category="web php">
+        <div class="project-thumb-wrapper">
+          <img src="assets/devpulse.jpg" alt="DevPulse Dashboard" class="project-thumb">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <h3 class="project-title">DevPulse Web Portal</h3>
+          <p class="project-desc">
+            A full-stack web application dashboard providing real-time data tracking, user authentication, and interactive reporting tools built with PHP & Vanilla JS.
+          </p>
+          <div class="project-footer">
+            <button class="btn btn-secondary btn-sm open-modal-btn" data-project="devpulse"><i class="fa-solid fa-circle-info"></i> Details</button>
+            <a href="#matrix" class="btn btn-primary btn-sm"><i class="fa-solid fa-layer-group"></i> Architecture</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card project-card" data-category="python">
+        <div class="project-thumb-wrapper">
+          <img src="assets/pyautomate.jpg" alt="PyAutomate Suite" class="project-thumb">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Scripting</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <h3 class="project-title">PyAutomate & Analytics Tool</h3>
+          <p class="project-desc">
+            Automated Python suite for web scraping, file parsing, and generating visual data reports for server logging and data pipelines.
+          </p>
+          <div class="project-footer">
+            <button class="btn btn-secondary btn-sm open-modal-btn" data-project="pyautomate"><i class="fa-solid fa-circle-info"></i> Details</button>
+            <a href="#matrix" class="btn btn-primary btn-sm"><i class="fa-solid fa-layer-group"></i> Architecture</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass-card project-card" data-category="php web">
+        <div class="project-thumb-wrapper">
+          <img src="assets/cms.jpg" alt="PHP CMS Engine" class="project-thumb">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <h3 class="project-title">Lightweight PHP CMS Engine</h3>
+          <p class="project-desc">
+            A modular Content Management System featuring role-based access control, article editing, and dynamic page rendering with clean PHP & SQL.
+          </p>
+          <div class="project-footer">
+            <button class="btn btn-secondary btn-sm open-modal-btn" data-project="cms"><i class="fa-solid fa-circle-info"></i> Details</button>
+            <a href="#matrix" class="btn btn-primary btn-sm"><i class="fa-solid fa-layer-group"></i> Architecture</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Hire Me Section -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <span class="section-tag">// Get In Touch</span>
+      <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="glass-card">
+        <h3>Contact Information</h3>
+        <p style="color: var(--text-muted); margin-top: 8px;">
+          Have a project in mind, an opportunity to discuss, or want to collaborate? Send me a message!
+        </p>
+
+        <div class="contact-info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Email</div>
+              <div style="font-weight: 600;">shanchakraborty2009@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Core Focus</div>
+              <div style="font-weight: 600;">Web & Python Automation</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Location</div>
+              <div style="font-weight: 600;">Open for Remote & Relocation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="e.g. Alex Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" class="form-input" placeholder="alex@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" class="form-input" placeholder="Project Opportunity / Inquiry" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Tell me about your project requirements..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-content">
+        <!-- Dynamic modal content loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-width: 1200px; margin: 0 auto;">
+      <p>&copy; 2026 <strong>Shan Chakraborty</strong> | All Rights Reserved.</p>
+      <p style="margin-top: 8px; font-size: 0.8rem; color: var(--text-dim);">
+        Built with HTML5, CSS3, JavaScript, PHP & Python Expertise.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>
